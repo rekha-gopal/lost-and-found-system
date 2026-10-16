@@ -1,0 +1,5 @@
+# Block direct web access to private files
+<FilesMatch "^(\.env|\.env\.example|README\.md)$">
+    Require all denied
+</FilesMatch>
+Options -Indexes
